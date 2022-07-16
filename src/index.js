@@ -9,7 +9,7 @@ import App from './App';
 
 unstable_setRemoveBackgroundEnabled(true);
 
-const store = createStore({ key: 'nFA5H9elEytDyPyvKL7T' });
+const store = createStore({ key: 'Syk3xXBuosSrzn3q1h9S' });
 window.store = store;
 
 localforage.getItem('polotno-state', function (err, json) {

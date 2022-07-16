@@ -299,7 +299,7 @@ export default observer(({ store }) => {
           >
             Important question for you (!)
           </Button> */}
-          <AnchorButton
+          {/* <AnchorButton
             minimal
             href="https://polotno.com"
             target="_blank"
@@ -331,7 +331,7 @@ export default observer(({ store }) => {
           </AnchorButton>
           <Button icon="info-sign" minimal onClick={() => toggleFaq(true)}>
             About
-          </Button>
+          </Button> */}
 
           <Divider />
           <DownloadButton store={store} />
