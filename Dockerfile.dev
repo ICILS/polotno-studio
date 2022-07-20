@@ -1,0 +1,13 @@
+# build-stage
+FROM node:lts-alpine as build-stage
+RUN npm install -g http-server
+WORKDIR /polotno
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+#RUN npm run start
+
+EXPOSE 8081
+CMD [ "http-server", "build", "-p 8081"]
+#CMD ["npm", "run", "start"]
